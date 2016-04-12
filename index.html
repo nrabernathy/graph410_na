@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Brew Tap Map</title>
+<!-- Include meta tag to ensure proper rendering and touch zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+
+<!-- Include the jQuery library -->
+<script src="js/jquery-1.12.3.min.js"></script>
+
+<!-- Include the jQuery Mobile library -->
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+<!-- Theme Roller Stylesheets -->
+<link rel="stylesheet" href="css/themes/btmStyle.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+
+<!-- fotorama.css & fotorama.js. -->
+<link  href="css/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+<script src="js/fotorama.js"></script> <!-- 16 KB -->
+
+<!--  PHONE GAP -->
+<script src="phonegap.js"></script>
+
+</head>
+
+<body>
+
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+
+<!-- HEADER -->
+  <div data-role="header" class="ui-bar">
+    <img src="images/th.jpg" width="50px" height="38px" class="imageLeft"><h1>Brew Tap Map</h1>
+    
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" class="ui-btn">Find a Brew</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>    
+    </div>
+  </div>
+  
+<!-- CONTENT -->
+  <div data-role="main" class="ui-content">
+  <h1>Welcome to my page</h1>
+    <p>Nunc rutrum velit quam. Quisque tempor molestie libero et faucibus. </p>
+    <br />
+    
+    <div data-role="collapsible">
+		<h2>Westside Brewery</h2>
+       <ol>
+       	<li>Lager</li>
+        <li>IPA</li>
+        <li>Stout</li>
+       </ol>
+    </div>
+    <div data-role="collapsible">
+		<h2>Eastside Brewery</h2>
+       <ol data-role="listview" data-inset="false">
+       	<li data-role="list-divider">Light Beers</li>
+            <li>Stout</li>
+            <li>Porter</li>
+            <li>Belgian</li>
+        <li data-role="list-divider">Dark Beers</li>
+            <li>Lager</li>
+            <li>IPA</li>
+            <li>Pilsner</li>
+       </ol>
+    </div>
+    <div data-role="collapsible">
+		<h2>Northside Brewery</h2>
+       <ol data-role="listview" data-inset="true">
+       	<li data-role="list-divider">Dark Beers</li>
+            <li data-icon="home">Stout</li>
+            <li>Porter</li>
+            <li>Belgian</li>
+        <li data-role="list-divider">Light Beers</li>
+            <li>Lager</li>
+            <li>IPA</li>
+            <li>Pilsner</li>
+       </ol>
+    </div>
+    
+    <div class="fotorama"  data-width="100%" data-ratio="4/3">
+    	<img src="images/th.jpg">
+        <img src="images/th2.jpg">
+        <img src="images/th3.jpg">
+        
+    </div>
+    
+    <div class="horzLine"></div>
+    
+  </div>
+  
+<!-- FOOTER -->
+  <div data-role="footer">
+    <div class="imageCenter"><img src="images/th.jpg" width="100px" height="75px"></div><a href="#socialhome" class="ui-btn ui-btn-right">Social Media</a>
+  </div>
+
+<!-- RIGHT SIDE PANEL -->  
+  <!--<div data-role="panel" id="social" data-position="right" data-display="overlay">
+  	<h3>Social Media</h3>
+  	<a href="#" class="ui-btn">Like on Facebook</a>
+    <a href="#" class="ui-btn">Follow on Twitter</a>
+    <a href="#" class="ui-btn">Follow on Instagram</a>
+  </div>
+  -->
+  
+
+  
+  <div data-role="panel" id="socialhome" data-display="reveal" data-position="right">
+  	<h2>Social Media</h2>
+    <ul data-role="listview" data-inset="true">
+    <li data-icon="home"><a href="#" class="ui-btn">Like On Facebook</a>
+    <li><a href="#" class="ui-btn">Twitter</a>
+   <li><a href="#" class="ui-btn">Instagram</a>
+<li><a href="#" class="ui-btn">Flickr</a>
+    <li><a href="#" class="ui-btn">Pinterest</a>
+     <li><a href="#" class="ui-btn">Tumbler</a> 
+    <li><a href="#" class="ui-btn">Imgur</a>
+    </ul>
+  </div>
+
+
+</div> 
+
+<!-- ************ About ************** -->  
+
+<!-- About Page -->
+<div data-role="page" id="about" data-theme="a">
+
+<!-- HEADER -->
+  <div data-role="header" class="ui-bar">
+    <h1>Brew Tap Map</h1>
+    
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" class="ui-btn">Find a Brew</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>    
+    </div>
+  </div>
+  
+<!-- CONTENT -->
+  <div data-role="main" class="ui-content">
+  <h1>About Brew Tap App</h1>
+    <p>Conceived after a night of drinking, as to the dilemma of finding your favorite beer on tap at a local joint.</p>
+    <br />
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.4053485356258!2d-83.13078038524735!3d42.56791812994322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824c4649a76beff%3A0xd50b0b088d1eb5e5!2sHeadquarters!5e0!3m2!1sen!2sus!4v1459463466203" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    
+    
+  </div>
+  
+<!-- FOOTER -->
+  <div data-role="footer">
+    <a href="#socialabout" class="ui-btn ui-btn-right">Social Media</a>
+  </div>
+  
+  <div data-role="panel" id="socialabout" data-display="reveal" data-position="right" data-rel="back">
+  	<h2>Social Media</h2>
+    <ul data-role="listview" data-inset="true">
+    <li data-icon="home"><a href="#" class="ui-btn">Like On Facebook</a>
+    <li><a href="#" class="ui-btn">Twitter</a>
+   <li><a href="#" class="ui-btn">Instagram</a>
+<li><a href="#" class="ui-btn">Flickr</a>
+    <li><a href="#" class="ui-btn">Pinterest</a>
+     <li><a href="#" class="ui-btn">Tumbler</a> 
+    <li><a href="#" class="ui-btn">Imgur</a>
+    </ul>
+  </div>
+
+
+</div>
+
+<!-- ************ Contact ************** -->  
+
+<!-- About Page -->
+<div data-role="page" id="contact" data-theme="a">
+
+<!-- HEADER -->
+  <div data-role="header" class="ui-bar">
+    <h1>Brew Tap Map</h1>
+    <a href="#socialcontact" class="ui-btn ui-btn-right">Social Media</a>
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" class="ui-btn">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Brews</a></li>
+        </ul>    
+    </div>
+  </div>
+  
+<!-- CONTENT -->
+  <div data-role="main" class="ui-content">
+  <h1>Send a Message</h1>
+    <form method="post" action="#">
+    <label for="fname">First Name</label>
+    <input type="text" name="fname" id="fname">
+    <label for="lname">Last Name</label>
+    <input type="text" name="lname" id="lname">
+    <label for="lager">Lager</label><input type="radio" value="Lager" name="favbeer" id="lager" >
+    <label for="pale">Pale Ale</label><input type="radio" value="IPA" name="favbeer" id="pale">
+    <label for="ipa">IPA</label><input type="radio" value="Pale Ale" name="favbeer" id="ipa"> 
+    <label for="porter">Porter</label><input type="radio" value="Porter" name="favbeer" id="porter"> 
+    <label for="stout">Stout</label><input type="radio" value="Stout" name="favbeer" id="stout"> 
+    <label for="brown">Brown</label><input type="radio" value="Brown" name="favbeer" id="brown"> 
+    <label for="red">Red</label><input type="radio" value="Red" name="favbeer" id="red"> 
+    
+    <textarea name="message" rows="6" cols="15">
+    </textarea>
+
+    <input type="submit" value="Submit" class="ui-btn-inline">
+    <input type="reset" value="Reset" class="ui-btn-inline">
+    </form>   
+    
+  </div>
+  
+<!-- FOOTER -->
+  <div data-role="footer">
+    <a href="#socialcontact" class="ui-btn ui-btn-right">Social Media</a>
+  </div>
+  
+<!-- Contact page panel -->  
+  <div data-role="panel" id="socialcontact" data-display="reveal" data-position="right" data-rel="back">
+  	<h2>Social Media</h2>
+    <ul data-role="listview" data-inset="true">
+    <li data-icon="home"><a href="#" class="ui-btn">Like On Facebook</a>
+    <li><a href="#" class="ui-btn">Twitter</a></li>
+   <li><a href="#" class="ui-btn">Instagram</a></li>
+<li><a href="#" class="ui-btn">Flickr</a></li>
+    <li><a href="#" class="ui-btn">Pinterest</a></li>
+     <li><a href="#" class="ui-btn">Tumbler</a></li> 
+    <li><a href="#" class="ui-btn">Imgur</a></li>
+    </ul>
+  </div>
+
+
+</div>
+
+
+
+</body>
+</html>

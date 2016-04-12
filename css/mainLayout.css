@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body 
+{ 
+font-family:Tahoma, Geneva, sans-serif;
+font-size:14px;
+color:#ff0000;
+
+
+}
+
+header{
+	background-color:#687ef1;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	
+}
+
+nav {
+	background-color:#C90;
+	padding-bottom:50px;
+	
+}
+
+ui-btn-f{
+	background-color: #ffffdd;
+	color:#fdd;
+	
+	
+}
+
+ui-header-c{
+	background-color: #ffffdd;
+	color:#fdd;
+	
+	
+}
+
+
+h1, h2, h3, h4, h5, h6{
+	
+}
+
+main{
+	
+}
+
+main p{
+	
+}
+
+.col1{
+	
+}
+
+.col2{
+	
+}
+
+footer{
+	
+}
+
+footer .copy{
+	
+}
